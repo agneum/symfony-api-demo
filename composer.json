@@ -11,24 +11,31 @@
             "app/AppCache.php"
         ]
     },
+    "autoload-dev": {
+        "psr-4": { "Tests\\": "tests/" },
+    },
     "require": {
-        "php": ">=5.3.9",
-        "symfony/symfony": "2.8.*",
+        "php": ">=5.5.9",
+        "symfony/symfony": "^2.8",
         "doctrine/orm": "^2.4.8",
-        "doctrine/doctrine-bundle": "~1.4",
+        "doctrine/doctrine-bundle": "^1.6",
         "symfony/swiftmailer-bundle": "~2.3",
         "symfony/monolog-bundle": "~2.4",
         "sensio/distribution-bundle": "~5.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-        "friendsofsymfony/rest-bundle": "2.0.0",
+        "friendsofsymfony/rest-bundle": "^2.0",
         "nelmio/api-doc-bundle": "^2.13",
         "jms/serializer-bundle": "^1.1",
-        "gedmo/doctrine-extensions": "^2.4"
+        "gedmo/doctrine-extensions": "^2.4",
+        "ext-pdo_sqlite": "*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~3.0",
-        "symfony/phpunit-bridge": "~2.7"
+        "symfony/phpunit-bridge": "~2.7",
+        "phpunit/phpunit": "^4.8",
+        "dama/doctrine-test-bundle": "^1.0",
+        "doctrine/doctrine-fixtures-bundle": "^2.3"
     },
     "scripts": {
         "post-install-cmd": [

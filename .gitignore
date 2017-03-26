@@ -5,10 +5,11 @@
 /app/logs/*
 !app/cache/.gitkeep
 !app/logs/.gitkeep
+/build/
+/var/*
+!/var/data/.gitkeep
 /app/phpunit.xml
 /build/
 /vendor/
 /bin/
-/composer.phar
 /.idea/**
-composer.lock
