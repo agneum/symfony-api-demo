@@ -13,3 +13,4 @@
 /vendor/
 /bin/
 /.idea/**
+docker/.env
